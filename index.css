@@ -1,0 +1,509 @@
+header{
+    max-width: 100vw;
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1100px;
+    margin: 40px auto 10px;
+    padding: 30px 20px;
+    box-sizing: border-box;
+}
+
+footer{
+    position: relative;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0d0b18;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+img{
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.main-header {
+    position: fixed;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.glass-panel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1000px;
+    padding: 5px 15px;
+    border-radius: 30px; 
+    background: rgba(217, 217, 217, 0.33); 
+    backdrop-filter: blur(12px);
+    margin: 1% auto 0 auto; /* сверху */
+    position: fixed;
+    z-index: 1;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: "Jua", sans-serif;
+    color: #fff;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 24px;
+}
+
+.nav-menu a {
+    color: #b5b3bc;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: color 0.2s ease;
+}
+
+.nav-menu a:hover {
+    color: #fff;
+}
+
+.icon {
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+.auth-zone {
+    display: flex;
+    gap: 12px;
+}
+.download-header{
+    border-radius: 20px;
+    font-size: 20px;
+    background: linear-gradient(135deg, #7b52b3, #da7757);
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    padding: 19px 18px;
+}
+.download-header:hover{
+    background: linear-gradient(135deg, #54397a, #814733);
+}
+
+.program-logo-big{
+    width: 100%;
+    height: auto;
+    max-width: 950px;
+    position: absolute;
+    margin-top: 3%;
+    z-index: -1;
+    opacity: 0.5;
+    border-radius: 77px;
+}
+.welcome{
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    color: #fff;
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.h2Welcome{
+    font-family: "Jua", sans-serif;
+    font-size: 96px;
+    margin: 0 0 -33px 0;
+    padding-top: 4%;
+    user-select: none;
+}
+.description{
+    font-size: 48px;
+    max-width: 900px;
+}
+.AIs{
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    color: #fff;
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 20px 0 20px;
+    margin-top: -200px;
+}
+.light-blur{
+    margin-top: -18px;
+    max-width: 950px;
+    width: 100%;
+}
+.program-preview-container{
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    color: #fff;
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    border-radius: 62px; 
+    background: rgba(217, 217, 217, 0.33); 
+    backdrop-filter: blur(12px);
+    width: fit-content;
+    margin: -250px auto 0 auto;
+}
+.program-preview-img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.lighweight-power-text{
+    color: #fff;
+    font-size: 36px;
+    text-align: center;
+}
+.what-ais{
+    width: 100%;
+    position: relative;
+    min-height: 250px;
+}
+.claude-img{
+  padding-left: 0;
+}
+.claude-code-ai{
+    color: #fff;
+    font-size: 54px;
+    margin-left: -40px;
+    margin-top: -230px;
+    transform: rotate(-30.58deg);
+    font-family: Balsamiq Sans, cursive;
+}
+.chatgpt-img{
+    padding-left: 0;
+    margin-left: 445px;
+    margin-top: -130px;
+}
+.chatgpt-ai{
+    color: #fff;
+    font-size: 54px;
+    margin-left: 400px;
+    margin-top: 60px;
+    transform: rotate(18.01deg);
+    font-family: Balsamiq Sans, cursive;
+}
+.more-models-img{
+    position: absolute;
+    top: -50px;
+    right: 10px;
+
+}
+.more-models-text{
+    position: absolute;
+    top: 170px;
+    right: -10px;
+    color: #fff;
+    font-size: 40px;
+    transform: rotate(-5.71deg);
+    font-family: Balsamiq Sans, cursive;
+}
+.different-environment{
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    color: #fff;
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+.different-environment-text{
+    position: absolute;
+    color: #fff;
+    font-size: 40px;
+    font-family: "Jua", sans-serif;
+}
+.different-programs{
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    color: #fff;
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+.claude-code-desktop-title{
+    color: #fff;
+    font-size: 40px;
+    font-family: "Jua", sans-serif;
+}
+.claude-code-desktopfooter-brand-block-description{
+    color: #fff;
+    font-size: 40px;
+    font-family: "Jua", sans-serif;
+    text-align: justify;
+    margin: -15px auto auto auto;
+}
+.claude-code-desktop-img{
+    max-width: 100%;
+    margin-top: 10px;
+}
+.claude-code-cli-title{
+    color: #fff;
+    font-size: 40px;
+    font-family: "Jua", sans-serif;
+}
+.claude-code-cli-description{
+    color: #fff;
+    font-size: 40px;
+    font-family: "Jua", sans-serif;
+    text-align: justify;
+    margin: -15px auto auto auto;
+}
+.claude-code-cli-img{
+    max-width: 100%;
+    margin-top: 10px;
+}
+.codex-cli-title{
+    color: #fff;
+    font-size: 40px;
+    font-family: "Jua", sans-serif;
+}
+.codex-cli-description{
+    color: #fff;
+    font-size: 40px;
+    font-family: "Jua", sans-serif;
+    text-align: justify;
+    margin: -15px auto auto auto;
+}
+.codex-cli-img{
+    max-width: 100%;
+    margin-top: 10px;
+}
+.droid-cli-title{
+    color: #fff;
+    font-size: 40px;
+    font-family: "Jua", sans-serif;
+}
+.droid-cli-description{
+    color: #fff;
+    font-size: 40px;
+    font-family: "Jua", sans-serif;
+    text-align: justify;
+    margin: -15px auto auto auto;
+}
+.droid-cli-img{
+    max-width: 100%;
+    margin-top: 10px;
+}
+.opencode-title{
+    color: #fff;
+    font-size: 40px;
+    font-family: "Jua", sans-serif;
+}
+.opencode-description{
+    color: #fff;
+    font-size: 40px;
+    font-family: "Jua", sans-serif;
+    text-align: justify;
+    margin: -15px auto auto auto;
+}
+.opencode-img{
+    max-width: 100%;
+    margin-top: 10px;
+}
+.continue-dev-title{
+    color: #fff;
+    font-size: 40px;
+    font-family: "Jua", sans-serif;
+}
+.continue-dev-description{
+    color: #fff;
+    font-size: 40px;
+    font-family: "Jua", sans-serif;
+    text-align: justify;
+    margin: -15px auto auto auto;
+}
+.continue-dev-img{
+    max-width: 100%;
+    margin-top: 10px;
+}
+.call-to-action{
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    color: #fff;
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+.call-to-action-text{
+    color: #fff;
+    font-size: 40px;
+    font-family: "Jua", sans-serif;
+    text-align: center;
+    margin: 50px auto auto auto;
+}
+.download-button{
+    border-radius: 20px;
+    font-size: 36px;
+    background: linear-gradient(135deg, #7b52b3, #da7757);
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    padding: 19px 18px;
+    width: 400px;
+    height: 100px;
+    margin-top: 32px;
+    margin-left: -650px;
+}
+.download-button:hover{
+    background: linear-gradient(135deg, #54397a, #814733);
+}
+.source-button{
+    border-radius: 20px;
+    font-size: 36px;
+    background: linear-gradient(135deg, #52B381, #d2de27);
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    padding: 19px 18px;
+    width: 400px;
+    height: 100px;
+    margin-top: -102px;
+    margin-right: -650px;
+}
+.source-button:hover{
+    background: linear-gradient(135deg, #367554, #838a18);
+}
+.funpay-button{
+    border-radius: 20px;
+    font-size: 36px;
+    background: linear-gradient(135deg, #9ACCCC, #0088FF);
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    padding: 19px 18px;
+    width: 400px;
+    height: 100px;
+    margin-top: 20px;
+}
+.funpay-button:hover{
+    background: linear-gradient(135deg, #769D9D, #004E93);
+}
+.footer-container{
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+    padding: 5px 15px;
+    border-radius: 30px; 
+    background: rgba(217, 217, 217, 0.33); 
+    backdrop-filter: blur(12px);
+    height: fit-content;
+    padding: 15px;
+    grid-template-columns: 15px 15px 15px 15px;
+    flex-direction: row;
+}
+
+.footer-brand-block{
+    align-items: left;
+    align-content: left;
+    justify-content: left;
+    display: flex;
+    color: #fff;
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+    width: fit-content;
+    box-sizing: border-box;
+}
+
+.brand-name{
+    color: #fff;
+    font-size: 30px;
+    font-family: "Jua", sans-serif;
+    text-align: center;
+}
+.brand-block{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 8px;
+    max-height: 50px;
+}
+.right-reserved{
+    color: #fff;
+    font-size: 20px;
+    text-align: left;
+}
+.navigation-footer{
+    align-items: left;
+    align-content: left;
+    justify-content: left;
+    display: flex;
+    color: #fff;
+    position: relative;
+    flex-direction: column;
+    text-align: left;
+    width: fit-content;
+    box-sizing: border-box;
+    padding-left: 60px;
+    margin-top: -10px;
+}
+.navigation-footer-title{
+    color: #fff;
+    font-size: 20px;
+    text-align: left;
+}
+.nav-menu-footer{
+    display: flex;
+    gap: 24px;
+}
+.nav-menu-footer a{
+    color: #b5b3bc;
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: color 0.2s ease;
+    padding-top: 13px;
+}
+.nav-menu-footer a:hover{
+    color: #fff;
+}
